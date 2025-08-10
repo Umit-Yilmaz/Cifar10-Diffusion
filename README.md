@@ -53,6 +53,9 @@ Burada e rastgele gürültü, a ise kümülatif çarpımdır.
    git clone https://github.com/kullanici/simple-ddpm.git
    cd simple-ddpm
 
-Gerekli kütüphaneleri yükleyin ve scripti çalıştırın.
+2. Gerekli kütüphaneleri yükleyin ve scripti çalıştırın.
 python main.py
 Eğitim sırasında samples/ klasöründe modelin ürettiği örnekler kaydedilir.
+
+![Adsız tasarım (3)](https://github.com/user-attachments/assets/3ff1678f-3bae-4e27-9886-570eede71476)
+
