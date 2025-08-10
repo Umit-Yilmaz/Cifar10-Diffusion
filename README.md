@@ -25,22 +25,26 @@ Bu yaklaşım, karmaşık veri dağılımlarını yakalamada güçlüdür ve öz
 ## Matematiksel Temeller
 
 - **Sinüzoidal Zaman Gömmesi**:  
-  Modelin her zaman adımını \(t\) olarak düşünürüz.  
-  \[
-  PE(t)_{2i} = \sin\left(\frac{t}{10000^{2i/d}}\right), \quad PE(t)_{2i+1} = \cos\left(\frac{t}{10000^{2i/d}}\right)
-  \]  
-  Burada \(d\), embedding boyutudur.
+  Modelin her zaman adımını "t" olarak düşünürsek :
 
-- **Gürültü Eklemek (Forward Process)**:  
-  Temiz görüntü \(x_0\)’a zaman \(t\) adımında gürültü eklenir:  
-  \[
-  x_t = \sqrt{\bar{\alpha}_t} x_0 + \sqrt{1 - \bar{\alpha}_t} \epsilon, \quad \epsilon \sim \mathcal{N}(0, I)
-  \]
 
-- **Gürültüyü Tahmin Etmek (Reverse Process)**:  
-  Model, \(x_t\) ve \(t\) verildiğinde \(\epsilon\)’i tahmin etmeye çalışır.
+<img width="193" height="41" alt="sin" src="https://github.com/user-attachments/assets/3f34a05c-c780-4a2a-a57f-20adaf7f843f" />
 
----
+
+
+Burada 
+𝑡 zaman adımı, 
+𝑑 embedding boyutu.
+
+  
+
+- **Gürültü Eklemek (Forward Process)**:
+
+  <img width="134" height="22" alt="den" src="https://github.com/user-attachments/assets/11bab066-5e1a-4d21-99d7-326e28ea9934" />
+
+
+Burada e rastgele gürültü, a ise kümülatif çarpımdır.
+
 
 ## Kurulum ve Kullanım
 
